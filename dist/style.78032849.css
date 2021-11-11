@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.text {
+    font-family: 'Lato';
+    font-style: normal;
+}
+
+.navbar {
+    width: 100%;
+    height: 75px;
+    background-color: #222222;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+  
+.navbar__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1140px;
+    padding-top: 15px;
+}
+  
+.navbar__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.navbar__icon {
+    max-width: 44px;
+    max-height: 44px;
+    margin: 0 17px;
+    display: inline-block;
+    overflow: hidden;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.navbar__icons:nth-child(1) {
+    float: left;
+    margin-left: -17px;
+}
+  
+.navbar__icons:last-child {
+    float: right;
+    margin-right: -17px;
+}
+
+.header-icon-3 {
+    cursor: pointer;
+}
+
+.logo {
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    background: #F1E4E6;
+    width: 100%;
+    max-height: 764px;
+    overflow: hidden;
+}
+
+.text-logo {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    max-height: 92px;
+}
+
+.logo-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-logo-the-brand {
+    font-weight: 900;
+    font-size: 47px;
+    line-height: 59px;
+}
+
+.text-logo-fashion {
+    color: #F16D7F;
+}
+
+.stripe {
+    background: #F16D7F;
+    width: 12px;
+    height: 92px;
+}
+
+.forgrid {
+    display: grid;
+    grid-template-columns: 16px auto;
+}
+
+.menu {
+    margin-left: auto;
+    height: 100%;
+    width: 232px;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding-left: 24px;
+}
+
+.menu-close {
+    margin-top: 16px;
+    margin-left: auto;
+    cursor: pointer;
+    display: block;
+}
+
+.menu-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    display: block;
+}
+
+.menu-display {
+    display: none;
+}
+
+.flexbox-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+}
+
+.index-card-box-1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 65px;
+    margin-bottom: 30px;
+}
+
+.index-card-box-2 {
+    width: 100%;
+    height: 180px;
+    background-image: url(/accesories.49046ae0.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 96px;
+}
+
+.card-category {
+    width: 360px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-category-1 {
+    background-image: url(/for-women.cb6bba81.jpg);
+}
+
+.card-category-2 {
+    background-image: url(/for-men.7d632e73.jpg);
+}
+
+.card-category-3 {
+    background-image: url(/for-kids.4bd2a232.jpg);
+}
+
+.text-category-1 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.text-category-2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.text-heading-1 {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    text-align: center;
+}
+
+.text-small {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+
+.text-product-intro {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    padding-top: 25px;
+    padding-bottom: 13px;
+    color: #000000;
+}
+
+.catalog-intro {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.product-box {
+    margin-bottom: 48px;
+}
+
+.product {
+    max-width: 360px;
+    background: #F8F8F8;
+    margin-bottom: 30px;
+}
+
+.product-prise {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
+.text-product {
+    padding-left: 16px;
+    padding-bottom: 20px;
+}
+
+.text-product-small {
+    padding-bottom: 18px;
+}
+
+.flexbox {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.browse-all-products {
+    display: block;
+    border: 1px solid #FF6A6A;
+    width: 211px;
+    height: 47px;
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 95px;
+    cursor: pointer;
+}
+
+.button-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+}
+
+.flexbox-for-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.feature {
+    background-color: #222222;
+    width: 100%;
+    height: 341px;
+}
+
+.feature-flexbox {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-feature-small {
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+}
+
+.text-feature-big {
+    line-height: 24px;
+    font-size: 20px;
+    color: #FBFBFB;
+    padding-top: 28px;
+    padding-bottom: 15px;
+}
+
+.feature-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscription {
+    width: 100%;
+    height: 448px;
+    background-image: url(/sub_back.8a4b4643.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.subscription-flexbox {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscription-photo-and-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscription-text {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    margin-top: 30px;
+}
+
+.subscription-form-text {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: #222224;
+}
+
+.subscription-form-text-span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 32px;
+}
+
+.subscription-flexbox-for-form {
+    display: flex;
+    gap: 0;
+}
+
+.subscription-form-button {
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    border-radius: 0 25px 25px 0;
+    border: none;
+    background: #F16D7F;
+    height: 49px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.subscription-input {
+    width: 256px;
+    border-radius: 25px 0 0 25px;
+    border: none;
+    background: #E1E1E1;
+    padding: 0 22px;
+}
+
+.footer {
+    width: 100%;
+    height: 79px;
+    background: #000000;
+}
+
+.flexbox-for-footer {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
+
+.footer-icon-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 7px;
+}
+
+.footer-icon {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*# sourceMappingURL=/style.78032849.css.map */
