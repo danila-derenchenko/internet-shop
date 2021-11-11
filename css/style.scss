@@ -150,7 +150,7 @@
 .index-card-box-2 {
     width: 100%;
     height: 180px;
-    background-image: url(/accesories.49046ae0.jpg);
+    background-image: url(../img/accesories.jpg);
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -166,15 +166,15 @@
 }
 
 .card-category-1 {
-    background-image: url(/for-women.cb6bba81.jpg);
+    background-image: url(../img/for-women.jpg);
 }
 
 .card-category-2 {
-    background-image: url(/for-men.7d632e73.jpg);
+    background-image: url(../img/for-men.jpg);
 }
 
 .card-category-3 {
-    background-image: url(/for-kids.4bd2a232.jpg);
+    background-image: url(../img/for-kids.jpg);
 }
 
 .text-category-1 {
@@ -322,7 +322,7 @@
 .subscription {
     width: 100%;
     height: 448px;
-    background-image: url(/sub_back.8a4b4643.png);
+    background-image: url(../img/sub_back.png);
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -431,7 +431,7 @@
 
 .footer-icon:hover {
     background-color: #F16D7F;
-    filter: invert(1);
+    .footer-img {
+        filter: invert(1);
+    }
 }
-
-/*# sourceMappingURL=/style.78032849.css.map */
