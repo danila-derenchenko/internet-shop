@@ -38,7 +38,7 @@
   max-width: 44px;
   max-height: 44px;
   margin: 0 17px;
-  display: inline-block;
+  display: block;
   margin-top: auto;
   margin-bottom: 0;
 }
@@ -88,6 +88,7 @@
   line-height: 40px;
   font-weight: 700;
   max-height: 92px;
+  white-space: nowrap;
 }
 
 .logo-name {
@@ -128,6 +129,7 @@
 
 .menu-close {
   margin-top: 16px;
+  margin-right: 16px;
   margin-left: auto;
   cursor: pointer;
   display: block;
@@ -139,6 +141,34 @@
   line-height: 17px;
   color: #000000;
   display: block;
+  margin-bottom: 24px;
+}
+
+.index-menu-title-li {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  margin-bottom: 12px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.index-menu-ul {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.index-menu-element {
+  margin-left: 21px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .menu-display {
@@ -229,8 +259,7 @@
 }
 
 .catalog-intro {
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
   margin-bottom: 48px;
 }
 
@@ -249,6 +278,69 @@
   font-size: 16px;
   line-height: 19px;
   color: #F16D7F;
+}
+
+.product-img {
+  width: 360px;
+  height: 420px;
+}
+
+.product-img-1 {
+  background: url(/1.06f8af9e.png);
+}
+
+.product-img-2 {
+  background: url(/2.ec21867c.png);
+}
+
+.product-img-3 {
+  background: url(/3.5d1f2f90.png);
+}
+
+.product-img-4 {
+  background: url(/4.defeea9e.png);
+}
+
+.product-img-5 {
+  background: url(/5.7803c2e3.png);
+}
+
+.product-img-6 {
+  background: url(/6.ccf5d0a1.png);
+}
+
+.img-hover {
+  position: relative;
+  background-color: #000000;
+  opacity: 0.5;
+  display: none;
+  width: 360px;
+  height: 420px;
+}
+
+.product-img:hover .img-hover {
+  display: block;
+}
+
+.button-hover {
+  position: absolute;
+  top: 188px;
+  left: 111px;
+  width: 138px;
+  height: 43px;
+  border: 1px solid #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.index-cart-button-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
 }
 
 .text-product {
@@ -277,6 +369,7 @@
   margin-right: auto;
   margin-bottom: 95px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .button-text {
