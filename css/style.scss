@@ -113,11 +113,7 @@
     background: #F16D7F;
     width: 12px;
     height: 92px;
-}
-
-.forgrid {
-    display: grid;
-    grid-template-columns: 16px auto;
+    margin-right: 16px;
 }
 
 .menu {
@@ -336,6 +332,7 @@ li {
     justify-content: center;
     align-items: center;
     background-color: transparent;
+    opacity: 1;
     cursor: pointer;
 }
 
@@ -373,6 +370,15 @@ li {
     margin-bottom: 95px;
     cursor: pointer;
     text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.browse-all-products:hover {
+    background-color: #F16D7F;
+    .button-text {
+        color: #FFFFFF;
+    }
+    transition-duration: 0.5s;
 }
 
 .button-text {
@@ -578,4 +584,8 @@ li {
     height: 148px;
     line-height: 148px;
     white-space: nowrap;
+}
+
+details > summary:first-of-type {
+    list-style-type: none;
 }
