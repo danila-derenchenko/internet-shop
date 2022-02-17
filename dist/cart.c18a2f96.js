@@ -117,79 +117,9 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
+})({"js/cart.js":[function(require,module,exports) {
 
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
-
-  return bundleURL;
-}
-
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-
-  return '/';
-}
-
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)?\/[^/]+(?:\?.*)?$/, '$1') + '/';
-}
-
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-
-function updateLink(link) {
-  var newLink = link.cloneNode();
-
-  newLink.onload = function () {
-    link.remove();
-  };
-
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-
-var cssTimeout = null;
-
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-
-    cssTimeout = null;
-  }, 50);
-}
-
-module.exports = reloadCSS;
-},{"./bundle-url":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"css/style.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./..\\img\\accesories.jpg":[["accesories.49046ae0.jpg","img/accesories.jpg"],"img/accesories.jpg"],"./..\\img\\for-women.jpg":[["for-women.cb6bba81.jpg","img/for-women.jpg"],"img/for-women.jpg"],"./..\\img\\for-men.jpg":[["for-men.7d632e73.jpg","img/for-men.jpg"],"img/for-men.jpg"],"./..\\img\\for-kids.jpg":[["for-kids.4bd2a232.jpg","img/for-kids.jpg"],"img/for-kids.jpg"],"./..\\img\\1.png":[["1.06f8af9e.png","img/1.png"],"img/1.png"],"./..\\img\\2.png":[["2.ec21867c.png","img/2.png"],"img/2.png"],"./..\\img\\3.png":[["3.5d1f2f90.png","img/3.png"],"img/3.png"],"./..\\img\\4.png":[["4.defeea9e.png","img/4.png"],"img/4.png"],"./..\\img\\5.png":[["5.7803c2e3.png","img/5.png"],"img/5.png"],"./..\\img\\6.png":[["6.ccf5d0a1.png","img/6.png"],"img/6.png"],"./..\\img\\sub_back.png":[["sub_back.8a4b4643.png","img/sub_back.png"],"img/sub_back.png"],"./..\\img\\filter.svg":[["filter.32fdf769.svg","img/filter.svg"],"img/filter.svg"],"./..\\img\\filter-center.svg":[["filter-center.93391bcc.svg","img/filter-center.svg"],"img/filter-center.svg"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +147,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55086" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61468" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -393,5 +323,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/style.6b54f5b7.js.map
+},{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/cart.js"], null)
+//# sourceMappingURL=/cart.c18a2f96.js.map

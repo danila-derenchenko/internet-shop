@@ -644,4 +644,164 @@ details {
   line-height: 148px;
 }
 
+.cart-main {
+  width: 100%;
+  height: 980px;
+}
+
+.cart-main-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+}
+
+.cart-product {
+  width: 652px;
+  height: 306px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.cart-product-info {
+  padding-top: 22px;
+  padding-left: 31px;
+}
+
+.cart-product-img {
+  width: 262px;
+}
+
+.cart-product-close {
+  width: 18px;
+  float: right;
+  margin-right: 22px;
+  cursor: pointer;
+}
+
+.cart-product-name {
+  width: 262px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: #222222;
+}
+
+.cart-product-about {
+  margin-top: 42px;
+}
+
+.cart-product-about-text {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+  margin-bottom: 6px;
+}
+
+.cart-products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.cart-product-price {
+  color: #F16D7F;
+}
+
+.cart-product-price-grey {
+  color: grey;
+}
+
+.cart-product-border {
+  padding: 1px 15px;
+  border: 1px solid #EAEAEA;
+  margin-left: 24px;
+}
+
+.cart-form-intro {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-bottom: 20px;
+}
+
+.cart-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-form-input {
+  display: block;
+  width: 360px;
+  height: 45px;
+  padding: 17px 13px 17px 13px;
+  border: 1px solid #A4A4A4;
+  margin-bottom: 20px;
+}
+
+.cart-form-getaquote {
+  padding: 10px 14px 10px 14px;
+  border: 1px solid #A4A4A4;
+  height: 34px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.cart-form-getaquote-text {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+}
+
+.cart-form-bottom {
+  width: 360px;
+  margin-top: 57px;
+  padding: 0 34px;
+  background-color: #F5F3F3;
+}
+
+.cart-form-subtotal {
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  text-align: right;
+  margin-bottom: 12px;
+  margin-top: 39px;
+}
+
+.cart-form-grandtotal {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  text-align: right;
+  margin-bottom: 39px;
+}
+
+.cart-form-grandtotal-price {
+  color: #F16D7F;
+}
+
+.cart-form-chechout {
+  padding: 15px 42px 15px 42px;
+  background-color: #F16D7F;
+  margin-bottom: 42px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.cart-form-chechout-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
 /*# sourceMappingURL=/style.6b54f5b7.css.map */
